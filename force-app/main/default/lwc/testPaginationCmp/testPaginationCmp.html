@@ -1,0 +1,11 @@
+<template>
+    <lightning-datatable
+                key-field="Id"
+                data={paginatedAccounts}
+                columns={columns}>
+    </lightning-datatable>
+
+    <c-pagination-cmp page-size-value="10" tabledata={accounts}  onaction={handlePaginationAction}>
+        <div class="slds-float_right" style="margin-right: 20rem;" slot="pageNumber"><b class="pagenumber">Page:</b></div>
+      </c-pagination-cmp>
+</template>
